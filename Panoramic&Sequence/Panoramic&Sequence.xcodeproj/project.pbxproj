@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3623A8661F00DBB200D66D9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8651F00DBB200D66D9E /* main.m */; };
+		3623A8691F00DBB200D66D9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8681F00DBB200D66D9E /* AppDelegate.m */; };
+		3623A86F1F00DBB200D66D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3623A86D1F00DBB200D66D9E /* Main.storyboard */; };
+		3623A8711F00DBB300D66D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3623A8701F00DBB300D66D9E /* Assets.xcassets */; };
+		3623A8741F00DBB300D66D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3623A8721F00DBB300D66D9E /* LaunchScreen.storyboard */; };
+		3623A8DF1F00DCA900D66D9E /* CHANGES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3623A87E1F00DCA900D66D9E /* CHANGES.txt */; };
+		3623A8E01F00DCA900D66D9E /* glues_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8821F00DCA900D66D9E /* glues_error.c */; };
+		3623A8E11F00DCA900D66D9E /* glues_mipmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8841F00DCA900D66D9E /* glues_mipmap.c */; };
+		3623A8E21F00DCA900D66D9E /* glues_project.c in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8861F00DCA900D66D9E /* glues_project.c */; };
+		3623A8E31F00DCA900D66D9E /* glues_quad.c in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8881F00DCA900D66D9E /* glues_quad.c */; };
+		3623A8E41F00DCA900D66D9E /* glues_registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 3623A88A1F00DCA900D66D9E /* glues_registry.c */; };
+		3623A8E51F00DCA900D66D9E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3623A88C1F00DCA900D66D9E /* LICENSE.txt */; };
+		3623A8E61F00DCA900D66D9E /* PLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A88E1F00DCA900D66D9E /* PLCamera.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8E71F00DCAA00D66D9E /* PLCubicPanorama.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8921F00DCA900D66D9E /* PLCubicPanorama.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8E81F00DCAA00D66D9E /* PLCylindricalPanorama.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8941F00DCA900D66D9E /* PLCylindricalPanorama.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8E91F00DCAA00D66D9E /* PLHotspot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8971F00DCA900D66D9E /* PLHotspot.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8EA1F00DCAA00D66D9E /* PLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A89B1F00DCA900D66D9E /* PLImage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8EB1F00DCAA00D66D9E /* PLIntersection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A89D1F00DCA900D66D9E /* PLIntersection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8EC1F00DCAA00D66D9E /* PLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8A51F00DCA900D66D9E /* PLLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8ED1F00DCAA00D66D9E /* PLMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8A71F00DCA900D66D9E /* PLMath.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8EE1F00DCAA00D66D9E /* PLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8A91F00DCA900D66D9E /* PLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8EF1F00DCAA00D66D9E /* PLObjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8AB1F00DCA900D66D9E /* PLObjectBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F01F00DCAA00D66D9E /* PLOpenGLSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8AF1F00DCA900D66D9E /* PLOpenGLSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F11F00DCAA00D66D9E /* PLPanoramaBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8B11F00DCA900D66D9E /* PLPanoramaBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F21F00DCAA00D66D9E /* PLRenderableElementBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8B41F00DCA900D66D9E /* PLRenderableElementBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F31F00DCAA00D66D9E /* PLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8B71F00DCA900D66D9E /* PLRenderer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F41F00DCAA00D66D9E /* PLScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8B91F00DCA900D66D9E /* PLScene.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F51F00DCAA00D66D9E /* PLSceneElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8BB1F00DCA900D66D9E /* PLSceneElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F61F00DCAA00D66D9E /* PLSceneElementBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8BD1F00DCA900D66D9E /* PLSceneElementBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F71F00DCAA00D66D9E /* PLSphericalPanorama.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8C11F00DCA900D66D9E /* PLSphericalPanorama.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F81F00DCAA00D66D9E /* PLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8C41F00DCA900D66D9E /* PLTexture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8F91F00DCAA00D66D9E /* PLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8C71F00DCA900D66D9E /* PLTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FA1F00DCAA00D66D9E /* PLTransitionFadeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8CA1F00DCA900D66D9E /* PLTransitionFadeBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FB1F00DCAA00D66D9E /* PLTransitionFadeIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8CD1F00DCA900D66D9E /* PLTransitionFadeIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FC1F00DCAA00D66D9E /* PLTransitionFadeOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8CF1F00DCA900D66D9E /* PLTransitionFadeOut.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FD1F00DCAA00D66D9E /* PLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8D21F00DCA900D66D9E /* PLUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FE1F00DCAA00D66D9E /* PLVector3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8D41F00DCA900D66D9E /* PLVector3.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A8FF1F00DCAA00D66D9E /* PLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8D61F00DCA900D66D9E /* PLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A9001F00DCAA00D66D9E /* PLViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8D81F00DCA900D66D9E /* PLViewBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3623A9011F00DCAA00D66D9E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3623A8DB1F00DCA900D66D9E /* README.txt */; };
+		3623A9021F00DCAA00D66D9E /* ZWSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A8DE1F00DCA900D66D9E /* ZWSpinImageView.m */; };
+		3623A9181F00DF2900D66D9E /* ZWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9171F00DF2900D66D9E /* ZWAlertView.m */; };
+		3623A91C1F00DF9C00D66D9E /* ZWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A91B1F00DF9C00D66D9E /* ZWBaseViewController.m */; };
+		3623A91F1F00DFE300D66D9E /* ZWRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A91E1F00DFE300D66D9E /* ZWRootTabBarController.m */; };
+		3623A9221F00E05600D66D9E /* ZWPanoramicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9211F00E05600D66D9E /* ZWPanoramicViewController.m */; };
+		3623A9251F00E07100D66D9E /* ZWSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9241F00E07100D66D9E /* ZWSequenceViewController.m */; };
+		3623A9281F00E0B900D66D9E /* ZWGetBundlePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */; };
+		3623A92B1F00E1C700D66D9E /* NSString+ZWStringDispose.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */; };
+		3623A9301F00E72B00D66D9E /* 全景展示六方图.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3623A92E1F00E72B00D66D9E /* 全景展示六方图.bundle */; };
+		3623A9311F00E72B00D66D9E /* 序列帧展示.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3623A92F1F00E72B00D66D9E /* 序列帧展示.bundle */; };
+		3623A9341F00EE0700D66D9E /* ZWImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9331F00EE0700D66D9E /* ZWImageButton.m */; };
+		3623A9361F00F19300D66D9E /* GestureGude.png in Resources */ = {isa = PBXBuildFile; fileRef = 3623A9351F00F19300D66D9E /* GestureGude.png */; };
+		3623A9381F00F6B800D66D9E /* test2048x1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3623A9371F00F6B800D66D9E /* test2048x1024.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3623A8611F00DBB200D66D9E /* Panoramic&Sequence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panoramic&Sequence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623A8651F00DBB200D66D9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3623A8671F00DBB200D66D9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3623A8681F00DBB200D66D9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3623A86E1F00DBB200D66D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3623A8701F00DBB300D66D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3623A8731F00DBB300D66D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3623A8751F00DBB300D66D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623A87E1F00DCA900D66D9E /* CHANGES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES.txt; sourceTree = "<group>"; };
+		3623A8801F00DCA900D66D9E /* glu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glu.h; sourceTree = "<group>"; };
+		3623A8811F00DCA900D66D9E /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues.h; sourceTree = "<group>"; };
+		3623A8821F00DCA900D66D9E /* glues_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_error.c; sourceTree = "<group>"; };
+		3623A8831F00DCA900D66D9E /* glues_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_error.h; sourceTree = "<group>"; };
+		3623A8841F00DCA900D66D9E /* glues_mipmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_mipmap.c; sourceTree = "<group>"; };
+		3623A8851F00DCA900D66D9E /* glues_mipmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_mipmap.h; sourceTree = "<group>"; };
+		3623A8861F00DCA900D66D9E /* glues_project.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_project.c; sourceTree = "<group>"; };
+		3623A8871F00DCA900D66D9E /* glues_project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_project.h; sourceTree = "<group>"; };
+		3623A8881F00DCA900D66D9E /* glues_quad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_quad.c; sourceTree = "<group>"; };
+		3623A8891F00DCA900D66D9E /* glues_quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_quad.h; sourceTree = "<group>"; };
+		3623A88A1F00DCA900D66D9E /* glues_registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_registry.c; sourceTree = "<group>"; };
+		3623A88B1F00DCA900D66D9E /* glues_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_registry.h; sourceTree = "<group>"; };
+		3623A88C1F00DCA900D66D9E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3623A88D1F00DCA900D66D9E /* PLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCamera.h; sourceTree = "<group>"; };
+		3623A88E1F00DCA900D66D9E /* PLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCamera.m; sourceTree = "<group>"; };
+		3623A88F1F00DCA900D66D9E /* PLCameraProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCameraProtected.h; sourceTree = "<group>"; };
+		3623A8901F00DCA900D66D9E /* PLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLConstants.h; sourceTree = "<group>"; };
+		3623A8911F00DCA900D66D9E /* PLCubicPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCubicPanorama.h; sourceTree = "<group>"; };
+		3623A8921F00DCA900D66D9E /* PLCubicPanorama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCubicPanorama.m; sourceTree = "<group>"; };
+		3623A8931F00DCA900D66D9E /* PLCylindricalPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCylindricalPanorama.h; sourceTree = "<group>"; };
+		3623A8941F00DCA900D66D9E /* PLCylindricalPanorama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCylindricalPanorama.m; sourceTree = "<group>"; };
+		3623A8951F00DCA900D66D9E /* PLEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLEnums.h; sourceTree = "<group>"; };
+		3623A8961F00DCA900D66D9E /* PLHotspot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHotspot.h; sourceTree = "<group>"; };
+		3623A8971F00DCA900D66D9E /* PLHotspot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHotspot.m; sourceTree = "<group>"; };
+		3623A8981F00DCA900D66D9E /* PLIInitializeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIInitializeObject.h; sourceTree = "<group>"; };
+		3623A8991F00DCA900D66D9E /* PLILoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLILoader.h; sourceTree = "<group>"; };
+		3623A89A1F00DCA900D66D9E /* PLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLImage.h; sourceTree = "<group>"; };
+		3623A89B1F00DCA900D66D9E /* PLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLImage.m; sourceTree = "<group>"; };
+		3623A89C1F00DCA900D66D9E /* PLIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIntersection.h; sourceTree = "<group>"; };
+		3623A89D1F00DCA900D66D9E /* PLIntersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLIntersection.m; sourceTree = "<group>"; };
+		3623A89E1F00DCA900D66D9E /* PLIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIObject.h; sourceTree = "<group>"; };
+		3623A89F1F00DCA900D66D9E /* PLIPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIPanorama.h; sourceTree = "<group>"; };
+		3623A8A01F00DCA900D66D9E /* PLIRenderableElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIRenderableElement.h; sourceTree = "<group>"; };
+		3623A8A11F00DCA900D66D9E /* PLIRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIRenderer.h; sourceTree = "<group>"; };
+		3623A8A21F00DCA900D66D9E /* PLIScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIScene.h; sourceTree = "<group>"; };
+		3623A8A31F00DCA900D66D9E /* PLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIView.h; sourceTree = "<group>"; };
+		3623A8A41F00DCA900D66D9E /* PLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLog.h; sourceTree = "<group>"; };
+		3623A8A51F00DCA900D66D9E /* PLLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLog.m; sourceTree = "<group>"; };
+		3623A8A61F00DCA900D66D9E /* PLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMath.h; sourceTree = "<group>"; };
+		3623A8A71F00DCA900D66D9E /* PLMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMath.m; sourceTree = "<group>"; };
+		3623A8A81F00DCA900D66D9E /* PLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLObject.h; sourceTree = "<group>"; };
+		3623A8A91F00DCA900D66D9E /* PLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLObject.m; sourceTree = "<group>"; };
+		3623A8AA1F00DCA900D66D9E /* PLObjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLObjectBase.h; sourceTree = "<group>"; };
+		3623A8AB1F00DCA900D66D9E /* PLObjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLObjectBase.m; sourceTree = "<group>"; };
+		3623A8AC1F00DCA900D66D9E /* PLObjectBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLObjectBaseProtected.h; sourceTree = "<group>"; };
+		3623A8AD1F00DCA900D66D9E /* PLObjectProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLObjectProtected.h; sourceTree = "<group>"; };
+		3623A8AE1F00DCA900D66D9E /* PLOpenGLSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOpenGLSupport.h; sourceTree = "<group>"; };
+		3623A8AF1F00DCA900D66D9E /* PLOpenGLSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOpenGLSupport.m; sourceTree = "<group>"; };
+		3623A8B01F00DCA900D66D9E /* PLPanoramaBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPanoramaBase.h; sourceTree = "<group>"; };
+		3623A8B11F00DCA900D66D9E /* PLPanoramaBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPanoramaBase.m; sourceTree = "<group>"; };
+		3623A8B21F00DCA900D66D9E /* PLPanoramaBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPanoramaBaseProtected.h; sourceTree = "<group>"; };
+		3623A8B31F00DCA900D66D9E /* PLRenderableElementBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRenderableElementBase.h; sourceTree = "<group>"; };
+		3623A8B41F00DCA900D66D9E /* PLRenderableElementBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRenderableElementBase.m; sourceTree = "<group>"; };
+		3623A8B51F00DCA900D66D9E /* PLRenderableElementBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRenderableElementBaseProtected.h; sourceTree = "<group>"; };
+		3623A8B61F00DCA900D66D9E /* PLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRenderer.h; sourceTree = "<group>"; };
+		3623A8B71F00DCA900D66D9E /* PLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRenderer.m; sourceTree = "<group>"; };
+		3623A8B81F00DCA900D66D9E /* PLScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLScene.h; sourceTree = "<group>"; };
+		3623A8B91F00DCA900D66D9E /* PLScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLScene.m; sourceTree = "<group>"; };
+		3623A8BA1F00DCA900D66D9E /* PLSceneElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSceneElement.h; sourceTree = "<group>"; };
+		3623A8BB1F00DCA900D66D9E /* PLSceneElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSceneElement.m; sourceTree = "<group>"; };
+		3623A8BC1F00DCA900D66D9E /* PLSceneElementBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSceneElementBase.h; sourceTree = "<group>"; };
+		3623A8BD1F00DCA900D66D9E /* PLSceneElementBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSceneElementBase.m; sourceTree = "<group>"; };
+		3623A8BE1F00DCA900D66D9E /* PLSceneElementBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSceneElementBaseProtected.h; sourceTree = "<group>"; };
+		3623A8BF1F00DCA900D66D9E /* PLSceneElementProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSceneElementProtected.h; sourceTree = "<group>"; };
+		3623A8C01F00DCA900D66D9E /* PLSphericalPanorama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSphericalPanorama.h; sourceTree = "<group>"; };
+		3623A8C11F00DCA900D66D9E /* PLSphericalPanorama.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSphericalPanorama.m; sourceTree = "<group>"; };
+		3623A8C21F00DCA900D66D9E /* PLStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLStructs.h; sourceTree = "<group>"; };
+		3623A8C31F00DCA900D66D9E /* PLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTexture.h; sourceTree = "<group>"; };
+		3623A8C41F00DCA900D66D9E /* PLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTexture.m; sourceTree = "<group>"; };
+		3623A8C51F00DCA900D66D9E /* PLTextureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTextureDelegate.h; sourceTree = "<group>"; };
+		3623A8C61F00DCA900D66D9E /* PLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransition.h; sourceTree = "<group>"; };
+		3623A8C71F00DCA900D66D9E /* PLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTransition.m; sourceTree = "<group>"; };
+		3623A8C81F00DCA900D66D9E /* PLTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionDelegate.h; sourceTree = "<group>"; };
+		3623A8C91F00DCA900D66D9E /* PLTransitionFadeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionFadeBase.h; sourceTree = "<group>"; };
+		3623A8CA1F00DCA900D66D9E /* PLTransitionFadeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTransitionFadeBase.m; sourceTree = "<group>"; };
+		3623A8CB1F00DCA900D66D9E /* PLTransitionFadeBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionFadeBaseProtected.h; sourceTree = "<group>"; };
+		3623A8CC1F00DCA900D66D9E /* PLTransitionFadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionFadeIn.h; sourceTree = "<group>"; };
+		3623A8CD1F00DCA900D66D9E /* PLTransitionFadeIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTransitionFadeIn.m; sourceTree = "<group>"; };
+		3623A8CE1F00DCA900D66D9E /* PLTransitionFadeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionFadeOut.h; sourceTree = "<group>"; };
+		3623A8CF1F00DCA900D66D9E /* PLTransitionFadeOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTransitionFadeOut.m; sourceTree = "<group>"; };
+		3623A8D01F00DCA900D66D9E /* PLTransitionProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTransitionProtected.h; sourceTree = "<group>"; };
+		3623A8D11F00DCA900D66D9E /* PLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLUtils.h; sourceTree = "<group>"; };
+		3623A8D21F00DCA900D66D9E /* PLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLUtils.m; sourceTree = "<group>"; };
+		3623A8D31F00DCA900D66D9E /* PLVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVector3.h; sourceTree = "<group>"; };
+		3623A8D41F00DCA900D66D9E /* PLVector3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLVector3.m; sourceTree = "<group>"; };
+		3623A8D51F00DCA900D66D9E /* PLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLView.h; sourceTree = "<group>"; };
+		3623A8D61F00DCA900D66D9E /* PLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLView.m; sourceTree = "<group>"; };
+		3623A8D71F00DCA900D66D9E /* PLViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLViewBase.h; sourceTree = "<group>"; };
+		3623A8D81F00DCA900D66D9E /* PLViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLViewBase.m; sourceTree = "<group>"; };
+		3623A8D91F00DCA900D66D9E /* PLViewBaseProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLViewBaseProtected.h; sourceTree = "<group>"; };
+		3623A8DA1F00DCA900D66D9E /* PLViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLViewDelegate.h; sourceTree = "<group>"; };
+		3623A8DB1F00DCA900D66D9E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3623A8DD1F00DCA900D66D9E /* ZWSpinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSpinImageView.h; sourceTree = "<group>"; };
+		3623A8DE1F00DCA900D66D9E /* ZWSpinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSpinImageView.m; sourceTree = "<group>"; };
+		3623A9161F00DF2900D66D9E /* ZWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAlertView.h; sourceTree = "<group>"; };
+		3623A9171F00DF2900D66D9E /* ZWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAlertView.m; sourceTree = "<group>"; };
+		3623A91A1F00DF9C00D66D9E /* ZWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWBaseViewController.h; sourceTree = "<group>"; };
+		3623A91B1F00DF9C00D66D9E /* ZWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWBaseViewController.m; sourceTree = "<group>"; };
+		3623A91D1F00DFE300D66D9E /* ZWRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRootTabBarController.h; sourceTree = "<group>"; };
+		3623A91E1F00DFE300D66D9E /* ZWRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRootTabBarController.m; sourceTree = "<group>"; };
+		3623A9201F00E05600D66D9E /* ZWPanoramicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPanoramicViewController.h; sourceTree = "<group>"; };
+		3623A9211F00E05600D66D9E /* ZWPanoramicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPanoramicViewController.m; sourceTree = "<group>"; };
+		3623A9231F00E07100D66D9E /* ZWSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSequenceViewController.h; sourceTree = "<group>"; };
+		3623A9241F00E07100D66D9E /* ZWSequenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSequenceViewController.m; sourceTree = "<group>"; };
+		3623A9261F00E0B900D66D9E /* ZWGetBundlePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGetBundlePath.h; sourceTree = "<group>"; };
+		3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGetBundlePath.m; sourceTree = "<group>"; };
+		3623A9291F00E1C700D66D9E /* NSString+ZWStringDispose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZWStringDispose.h"; sourceTree = "<group>"; };
+		3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZWStringDispose.m"; sourceTree = "<group>"; };
+		3623A92E1F00E72B00D66D9E /* 全景展示六方图.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "全景展示六方图.bundle"; sourceTree = "<group>"; };
+		3623A92F1F00E72B00D66D9E /* 序列帧展示.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "序列帧展示.bundle"; sourceTree = "<group>"; };
+		3623A9321F00EE0700D66D9E /* ZWImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWImageButton.h; sourceTree = "<group>"; };
+		3623A9331F00EE0700D66D9E /* ZWImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWImageButton.m; sourceTree = "<group>"; };
+		3623A9351F00F19300D66D9E /* GestureGude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GestureGude.png; sourceTree = "<group>"; };
+		3623A9371F00F6B800D66D9E /* test2048x1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2048x1024.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3623A85E1F00DBB200D66D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3623A8581F00DBB200D66D9E = {
+			isa = PBXGroup;
+			children = (
+				3623A8631F00DBB200D66D9E /* Panoramic&Sequence */,
+				3623A8621F00DBB200D66D9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3623A8621F00DBB200D66D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3623A8611F00DBB200D66D9E /* Panoramic&Sequence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3623A8631F00DBB200D66D9E /* Panoramic&Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				3623A92C1F00E28900D66D9E /* System */,
+				3623A9141F00DF0A00D66D9E /* Custom */,
+				3623A90B1F00DED100D66D9E /* Module */,
+				3623A87B1F00DCA900D66D9E /* ThirdLib */,
+				3623A92D1F00E72B00D66D9E /* Resource */,
+				3623A8641F00DBB200D66D9E /* Supporting Files */,
+			);
+			path = "Panoramic&Sequence";
+			sourceTree = "<group>";
+		};
+		3623A8641F00DBB200D66D9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3623A8651F00DBB200D66D9E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3623A87B1F00DCA900D66D9E /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				3623A87C1F00DCA900D66D9E /* 全景展示 */,
+				3623A8DC1F00DCA900D66D9E /* 街景展示 */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		3623A87C1F00DCA900D66D9E /* 全景展示 */ = {
+			isa = PBXGroup;
+			children = (
+				3623A87D1F00DCA900D66D9E /* PanoramaGL */,
+			);
+			path = "全景展示";
+			sourceTree = "<group>";
+		};
+		3623A87D1F00DCA900D66D9E /* PanoramaGL */ = {
+			isa = PBXGroup;
+			children = (
+				3623A87E1F00DCA900D66D9E /* CHANGES.txt */,
+				3623A87F1F00DCA900D66D9E /* glues */,
+				3623A88C1F00DCA900D66D9E /* LICENSE.txt */,
+				3623A88D1F00DCA900D66D9E /* PLCamera.h */,
+				3623A88E1F00DCA900D66D9E /* PLCamera.m */,
+				3623A88F1F00DCA900D66D9E /* PLCameraProtected.h */,
+				3623A8901F00DCA900D66D9E /* PLConstants.h */,
+				3623A8911F00DCA900D66D9E /* PLCubicPanorama.h */,
+				3623A8921F00DCA900D66D9E /* PLCubicPanorama.m */,
+				3623A8931F00DCA900D66D9E /* PLCylindricalPanorama.h */,
+				3623A8941F00DCA900D66D9E /* PLCylindricalPanorama.m */,
+				3623A8951F00DCA900D66D9E /* PLEnums.h */,
+				3623A8961F00DCA900D66D9E /* PLHotspot.h */,
+				3623A8971F00DCA900D66D9E /* PLHotspot.m */,
+				3623A8981F00DCA900D66D9E /* PLIInitializeObject.h */,
+				3623A8991F00DCA900D66D9E /* PLILoader.h */,
+				3623A89A1F00DCA900D66D9E /* PLImage.h */,
+				3623A89B1F00DCA900D66D9E /* PLImage.m */,
+				3623A89C1F00DCA900D66D9E /* PLIntersection.h */,
+				3623A89D1F00DCA900D66D9E /* PLIntersection.m */,
+				3623A89E1F00DCA900D66D9E /* PLIObject.h */,
+				3623A89F1F00DCA900D66D9E /* PLIPanorama.h */,
+				3623A8A01F00DCA900D66D9E /* PLIRenderableElement.h */,
+				3623A8A11F00DCA900D66D9E /* PLIRenderer.h */,
+				3623A8A21F00DCA900D66D9E /* PLIScene.h */,
+				3623A8A31F00DCA900D66D9E /* PLIView.h */,
+				3623A8A41F00DCA900D66D9E /* PLLog.h */,
+				3623A8A51F00DCA900D66D9E /* PLLog.m */,
+				3623A8A61F00DCA900D66D9E /* PLMath.h */,
+				3623A8A71F00DCA900D66D9E /* PLMath.m */,
+				3623A8A81F00DCA900D66D9E /* PLObject.h */,
+				3623A8A91F00DCA900D66D9E /* PLObject.m */,
+				3623A8AA1F00DCA900D66D9E /* PLObjectBase.h */,
+				3623A8AB1F00DCA900D66D9E /* PLObjectBase.m */,
+				3623A8AC1F00DCA900D66D9E /* PLObjectBaseProtected.h */,
+				3623A8AD1F00DCA900D66D9E /* PLObjectProtected.h */,
+				3623A8AE1F00DCA900D66D9E /* PLOpenGLSupport.h */,
+				3623A8AF1F00DCA900D66D9E /* PLOpenGLSupport.m */,
+				3623A8B01F00DCA900D66D9E /* PLPanoramaBase.h */,
+				3623A8B11F00DCA900D66D9E /* PLPanoramaBase.m */,
+				3623A8B21F00DCA900D66D9E /* PLPanoramaBaseProtected.h */,
+				3623A8B31F00DCA900D66D9E /* PLRenderableElementBase.h */,
+				3623A8B41F00DCA900D66D9E /* PLRenderableElementBase.m */,
+				3623A8B51F00DCA900D66D9E /* PLRenderableElementBaseProtected.h */,
+				3623A8B61F00DCA900D66D9E /* PLRenderer.h */,
+				3623A8B71F00DCA900D66D9E /* PLRenderer.m */,
+				3623A8B81F00DCA900D66D9E /* PLScene.h */,
+				3623A8B91F00DCA900D66D9E /* PLScene.m */,
+				3623A8BA1F00DCA900D66D9E /* PLSceneElement.h */,
+				3623A8BB1F00DCA900D66D9E /* PLSceneElement.m */,
+				3623A8BC1F00DCA900D66D9E /* PLSceneElementBase.h */,
+				3623A8BD1F00DCA900D66D9E /* PLSceneElementBase.m */,
+				3623A8BE1F00DCA900D66D9E /* PLSceneElementBaseProtected.h */,
+				3623A8BF1F00DCA900D66D9E /* PLSceneElementProtected.h */,
+				3623A8C01F00DCA900D66D9E /* PLSphericalPanorama.h */,
+				3623A8C11F00DCA900D66D9E /* PLSphericalPanorama.m */,
+				3623A8C21F00DCA900D66D9E /* PLStructs.h */,
+				3623A8C31F00DCA900D66D9E /* PLTexture.h */,
+				3623A8C41F00DCA900D66D9E /* PLTexture.m */,
+				3623A8C51F00DCA900D66D9E /* PLTextureDelegate.h */,
+				3623A8C61F00DCA900D66D9E /* PLTransition.h */,
+				3623A8C71F00DCA900D66D9E /* PLTransition.m */,
+				3623A8C81F00DCA900D66D9E /* PLTransitionDelegate.h */,
+				3623A8C91F00DCA900D66D9E /* PLTransitionFadeBase.h */,
+				3623A8CA1F00DCA900D66D9E /* PLTransitionFadeBase.m */,
+				3623A8CB1F00DCA900D66D9E /* PLTransitionFadeBaseProtected.h */,
+				3623A8CC1F00DCA900D66D9E /* PLTransitionFadeIn.h */,
+				3623A8CD1F00DCA900D66D9E /* PLTransitionFadeIn.m */,
+				3623A8CE1F00DCA900D66D9E /* PLTransitionFadeOut.h */,
+				3623A8CF1F00DCA900D66D9E /* PLTransitionFadeOut.m */,
+				3623A8D01F00DCA900D66D9E /* PLTransitionProtected.h */,
+				3623A8D11F00DCA900D66D9E /* PLUtils.h */,
+				3623A8D21F00DCA900D66D9E /* PLUtils.m */,
+				3623A8D31F00DCA900D66D9E /* PLVector3.h */,
+				3623A8D41F00DCA900D66D9E /* PLVector3.m */,
+				3623A8D51F00DCA900D66D9E /* PLView.h */,
+				3623A8D61F00DCA900D66D9E /* PLView.m */,
+				3623A8D71F00DCA900D66D9E /* PLViewBase.h */,
+				3623A8D81F00DCA900D66D9E /* PLViewBase.m */,
+				3623A8D91F00DCA900D66D9E /* PLViewBaseProtected.h */,
+				3623A8DA1F00DCA900D66D9E /* PLViewDelegate.h */,
+				3623A8DB1F00DCA900D66D9E /* README.txt */,
+			);
+			path = PanoramaGL;
+			sourceTree = "<group>";
+		};
+		3623A87F1F00DCA900D66D9E /* glues */ = {
+			isa = PBXGroup;
+			children = (
+				3623A8801F00DCA900D66D9E /* glu.h */,
+				3623A8811F00DCA900D66D9E /* glues.h */,
+				3623A8821F00DCA900D66D9E /* glues_error.c */,
+				3623A8831F00DCA900D66D9E /* glues_error.h */,
+				3623A8841F00DCA900D66D9E /* glues_mipmap.c */,
+				3623A8851F00DCA900D66D9E /* glues_mipmap.h */,
+				3623A8861F00DCA900D66D9E /* glues_project.c */,
+				3623A8871F00DCA900D66D9E /* glues_project.h */,
+				3623A8881F00DCA900D66D9E /* glues_quad.c */,
+				3623A8891F00DCA900D66D9E /* glues_quad.h */,
+				3623A88A1F00DCA900D66D9E /* glues_registry.c */,
+				3623A88B1F00DCA900D66D9E /* glues_registry.h */,
+			);
+			path = glues;
+			sourceTree = "<group>";
+		};
+		3623A8DC1F00DCA900D66D9E /* 街景展示 */ = {
+			isa = PBXGroup;
+			children = (
+				3623A8DD1F00DCA900D66D9E /* ZWSpinImageView.h */,
+				3623A8DE1F00DCA900D66D9E /* ZWSpinImageView.m */,
+			);
+			path = "街景展示";
+			sourceTree = "<group>";
+		};
+		3623A90B1F00DED100D66D9E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3623A90C1F00DED100D66D9E /* Panoramic */,
+				3623A9101F00DED100D66D9E /* Sequence */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3623A90C1F00DED100D66D9E /* Panoramic */ = {
+			isa = PBXGroup;
+			children = (
+				3623A90D1F00DED100D66D9E /* Controller */,
+				3623A90E1F00DED100D66D9E /* Model */,
+				3623A90F1F00DED100D66D9E /* View */,
+			);
+			path = Panoramic;
+			sourceTree = "<group>";
+		};
+		3623A90D1F00DED100D66D9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9201F00E05600D66D9E /* ZWPanoramicViewController.h */,
+				3623A9211F00E05600D66D9E /* ZWPanoramicViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3623A90E1F00DED100D66D9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3623A90F1F00DED100D66D9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3623A9101F00DED100D66D9E /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9111F00DED100D66D9E /* Controller */,
+				3623A9121F00DED100D66D9E /* Model */,
+				3623A9131F00DED100D66D9E /* View */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		3623A9111F00DED100D66D9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9231F00E07100D66D9E /* ZWSequenceViewController.h */,
+				3623A9241F00E07100D66D9E /* ZWSequenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3623A9121F00DED100D66D9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3623A9131F00DED100D66D9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3623A9141F00DF0A00D66D9E /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9191F00DF3B00D66D9E /* Base */,
+				3623A9151F00DF2900D66D9E /* Tools */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3623A9151F00DF2900D66D9E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9291F00E1C700D66D9E /* NSString+ZWStringDispose.h */,
+				3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */,
+				3623A9161F00DF2900D66D9E /* ZWAlertView.h */,
+				3623A9171F00DF2900D66D9E /* ZWAlertView.m */,
+				3623A9261F00E0B900D66D9E /* ZWGetBundlePath.h */,
+				3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3623A9191F00DF3B00D66D9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9321F00EE0700D66D9E /* ZWImageButton.h */,
+				3623A9331F00EE0700D66D9E /* ZWImageButton.m */,
+				3623A91A1F00DF9C00D66D9E /* ZWBaseViewController.h */,
+				3623A91B1F00DF9C00D66D9E /* ZWBaseViewController.m */,
+				3623A91D1F00DFE300D66D9E /* ZWRootTabBarController.h */,
+				3623A91E1F00DFE300D66D9E /* ZWRootTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3623A92C1F00E28900D66D9E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3623A8671F00DBB200D66D9E /* AppDelegate.h */,
+				3623A8681F00DBB200D66D9E /* AppDelegate.m */,
+				3623A86D1F00DBB200D66D9E /* Main.storyboard */,
+				3623A8701F00DBB300D66D9E /* Assets.xcassets */,
+				3623A8721F00DBB300D66D9E /* LaunchScreen.storyboard */,
+				3623A8751F00DBB300D66D9E /* Info.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		3623A92D1F00E72B00D66D9E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3623A9351F00F19300D66D9E /* GestureGude.png */,
+				3623A9371F00F6B800D66D9E /* test2048x1024.jpg */,
+				3623A92E1F00E72B00D66D9E /* 全景展示六方图.bundle */,
+				3623A92F1F00E72B00D66D9E /* 序列帧展示.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3623A8601F00DBB200D66D9E /* Panoramic&Sequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623A8781F00DBB300D66D9E /* Build configuration list for PBXNativeTarget "Panoramic&Sequence" */;
+			buildPhases = (
+				3623A85D1F00DBB200D66D9E /* Sources */,
+				3623A85E1F00DBB200D66D9E /* Frameworks */,
+				3623A85F1F00DBB200D66D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Panoramic&Sequence";
+			productName = "Panoramic&Sequence";
+			productReference = 3623A8611F00DBB200D66D9E /* Panoramic&Sequence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3623A8591F00DBB200D66D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZW;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = 90candy;
+				TargetAttributes = {
+					3623A8601F00DBB200D66D9E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RFYZ23A52S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3623A85C1F00DBB200D66D9E /* Build configuration list for PBXProject "Panoramic&Sequence" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3623A8581F00DBB200D66D9E;
+			productRefGroup = 3623A8621F00DBB200D66D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3623A8601F00DBB200D66D9E /* Panoramic&Sequence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3623A85F1F00DBB200D66D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623A9311F00E72B00D66D9E /* 序列帧展示.bundle in Resources */,
+				3623A8741F00DBB300D66D9E /* LaunchScreen.storyboard in Resources */,
+				3623A9301F00E72B00D66D9E /* 全景展示六方图.bundle in Resources */,
+				3623A9361F00F19300D66D9E /* GestureGude.png in Resources */,
+				3623A8711F00DBB300D66D9E /* Assets.xcassets in Resources */,
+				3623A9381F00F6B800D66D9E /* test2048x1024.jpg in Resources */,
+				3623A8DF1F00DCA900D66D9E /* CHANGES.txt in Resources */,
+				3623A8E51F00DCA900D66D9E /* LICENSE.txt in Resources */,
+				3623A9011F00DCAA00D66D9E /* README.txt in Resources */,
+				3623A86F1F00DBB200D66D9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3623A85D1F00DBB200D66D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623A9181F00DF2900D66D9E /* ZWAlertView.m in Sources */,
+				3623A8FD1F00DCAA00D66D9E /* PLUtils.m in Sources */,
+				3623A8E41F00DCA900D66D9E /* glues_registry.c in Sources */,
+				3623A8691F00DBB200D66D9E /* AppDelegate.m in Sources */,
+				3623A91F1F00DFE300D66D9E /* ZWRootTabBarController.m in Sources */,
+				3623A8E61F00DCA900D66D9E /* PLCamera.m in Sources */,
+				3623A9251F00E07100D66D9E /* ZWSequenceViewController.m in Sources */,
+				3623A8661F00DBB200D66D9E /* main.m in Sources */,
+				3623A8E11F00DCA900D66D9E /* glues_mipmap.c in Sources */,
+				3623A8E71F00DCAA00D66D9E /* PLCubicPanorama.m in Sources */,
+				3623A9001F00DCAA00D66D9E /* PLViewBase.m in Sources */,
+				3623A8F61F00DCAA00D66D9E /* PLSceneElementBase.m in Sources */,
+				3623A8FE1F00DCAA00D66D9E /* PLVector3.m in Sources */,
+				3623A8FA1F00DCAA00D66D9E /* PLTransitionFadeBase.m in Sources */,
+				3623A91C1F00DF9C00D66D9E /* ZWBaseViewController.m in Sources */,
+				3623A8E91F00DCAA00D66D9E /* PLHotspot.m in Sources */,
+				3623A8EF1F00DCAA00D66D9E /* PLObjectBase.m in Sources */,
+				3623A8EA1F00DCAA00D66D9E /* PLImage.m in Sources */,
+				3623A8EE1F00DCAA00D66D9E /* PLObject.m in Sources */,
+				3623A8F71F00DCAA00D66D9E /* PLSphericalPanorama.m in Sources */,
+				3623A8EB1F00DCAA00D66D9E /* PLIntersection.m in Sources */,
+				3623A8E01F00DCA900D66D9E /* glues_error.c in Sources */,
+				3623A9221F00E05600D66D9E /* ZWPanoramicViewController.m in Sources */,
+				3623A8EC1F00DCAA00D66D9E /* PLLog.m in Sources */,
+				3623A8F21F00DCAA00D66D9E /* PLRenderableElementBase.m in Sources */,
+				3623A8E21F00DCA900D66D9E /* glues_project.c in Sources */,
+				3623A8F31F00DCAA00D66D9E /* PLRenderer.m in Sources */,
+				3623A9021F00DCAA00D66D9E /* ZWSpinImageView.m in Sources */,
+				3623A8F01F00DCAA00D66D9E /* PLOpenGLSupport.m in Sources */,
+				3623A9281F00E0B900D66D9E /* ZWGetBundlePath.m in Sources */,
+				3623A8FB1F00DCAA00D66D9E /* PLTransitionFadeIn.m in Sources */,
+				3623A8F91F00DCAA00D66D9E /* PLTransition.m in Sources */,
+				3623A8E31F00DCA900D66D9E /* glues_quad.c in Sources */,
+				3623A8FC1F00DCAA00D66D9E /* PLTransitionFadeOut.m in Sources */,
+				3623A8F51F00DCAA00D66D9E /* PLSceneElement.m in Sources */,
+				3623A92B1F00E1C700D66D9E /* NSString+ZWStringDispose.m in Sources */,
+				3623A8F41F00DCAA00D66D9E /* PLScene.m in Sources */,
+				3623A8F11F00DCAA00D66D9E /* PLPanoramaBase.m in Sources */,
+				3623A8FF1F00DCAA00D66D9E /* PLView.m in Sources */,
+				3623A8E81F00DCAA00D66D9E /* PLCylindricalPanorama.m in Sources */,
+				3623A8ED1F00DCAA00D66D9E /* PLMath.m in Sources */,
+				3623A8F81F00DCAA00D66D9E /* PLTexture.m in Sources */,
+				3623A9341F00EE0700D66D9E /* ZWImageButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3623A86D1F00DBB200D66D9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3623A86E1F00DBB200D66D9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3623A8721F00DBB300D66D9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3623A8731F00DBB300D66D9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3623A8761F00DBB300D66D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3623A8771F00DBB300D66D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3623A8791F00DBB300D66D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RFYZ23A52S;
+				INFOPLIST_FILE = "Panoramic&Sequence/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.90candy.Panoramic-Sequence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3623A87A1F00DBB300D66D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RFYZ23A52S;
+				INFOPLIST_FILE = "Panoramic&Sequence/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.90candy.Panoramic-Sequence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3623A85C1F00DBB200D66D9E /* Build configuration list for PBXProject "Panoramic&Sequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623A8761F00DBB300D66D9E /* Debug */,
+				3623A8771F00DBB300D66D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623A8781F00DBB300D66D9E /* Build configuration list for PBXNativeTarget "Panoramic&Sequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623A8791F00DBB300D66D9E /* Debug */,
+				3623A87A1F00DBB300D66D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3623A8591F00DBB200D66D9E /* Project object */;
+}
