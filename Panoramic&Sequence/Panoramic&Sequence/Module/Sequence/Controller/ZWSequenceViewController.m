@@ -57,6 +57,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification:) name:@"AlertPrompt" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification:) name:@"StopAutoMove" object:nil];
+    
     [self initUI];
     [self loadImageData];
 

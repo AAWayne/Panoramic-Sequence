@@ -26,7 +26,7 @@
 #### [添加-fno-objc-arc示例]
 ![](./添加示例.png)
 	
-##### [Demo具体应用展示 GitHub传送门](http://www.90candy.com)
+##### [Demo具体应用展示 GitHub传送门](https://github.com/90candy/Panoramic-Sequence.git)
 
 
 	

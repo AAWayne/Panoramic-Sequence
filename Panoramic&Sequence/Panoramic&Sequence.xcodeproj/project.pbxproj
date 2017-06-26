@@ -53,8 +53,6 @@
 		3623A91F1F00DFE300D66D9E /* ZWRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A91E1F00DFE300D66D9E /* ZWRootTabBarController.m */; };
 		3623A9221F00E05600D66D9E /* ZWPanoramicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9211F00E05600D66D9E /* ZWPanoramicViewController.m */; };
 		3623A9251F00E07100D66D9E /* ZWSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9241F00E07100D66D9E /* ZWSequenceViewController.m */; };
-		3623A9281F00E0B900D66D9E /* ZWGetBundlePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */; };
-		3623A92B1F00E1C700D66D9E /* NSString+ZWStringDispose.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */; };
 		3623A9301F00E72B00D66D9E /* 全景展示六方图.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3623A92E1F00E72B00D66D9E /* 全景展示六方图.bundle */; };
 		3623A9311F00E72B00D66D9E /* 序列帧展示.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3623A92F1F00E72B00D66D9E /* 序列帧展示.bundle */; };
 		3623A9341F00EE0700D66D9E /* ZWImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A9331F00EE0700D66D9E /* ZWImageButton.m */; };
@@ -176,10 +174,6 @@
 		3623A9211F00E05600D66D9E /* ZWPanoramicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPanoramicViewController.m; sourceTree = "<group>"; };
 		3623A9231F00E07100D66D9E /* ZWSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSequenceViewController.h; sourceTree = "<group>"; };
 		3623A9241F00E07100D66D9E /* ZWSequenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSequenceViewController.m; sourceTree = "<group>"; };
-		3623A9261F00E0B900D66D9E /* ZWGetBundlePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGetBundlePath.h; sourceTree = "<group>"; };
-		3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGetBundlePath.m; sourceTree = "<group>"; };
-		3623A9291F00E1C700D66D9E /* NSString+ZWStringDispose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZWStringDispose.h"; sourceTree = "<group>"; };
-		3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZWStringDispose.m"; sourceTree = "<group>"; };
 		3623A92E1F00E72B00D66D9E /* 全景展示六方图.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "全景展示六方图.bundle"; sourceTree = "<group>"; };
 		3623A92F1F00E72B00D66D9E /* 序列帧展示.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "序列帧展示.bundle"; sourceTree = "<group>"; };
 		3623A9321F00EE0700D66D9E /* ZWImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWImageButton.h; sourceTree = "<group>"; };
@@ -457,12 +451,8 @@
 		3623A9151F00DF2900D66D9E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				3623A9291F00E1C700D66D9E /* NSString+ZWStringDispose.h */,
-				3623A92A1F00E1C700D66D9E /* NSString+ZWStringDispose.m */,
 				3623A9161F00DF2900D66D9E /* ZWAlertView.h */,
 				3623A9171F00DF2900D66D9E /* ZWAlertView.m */,
-				3623A9261F00E0B900D66D9E /* ZWGetBundlePath.h */,
-				3623A9271F00E0B900D66D9E /* ZWGetBundlePath.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -613,13 +603,11 @@
 				3623A8F31F00DCAA00D66D9E /* PLRenderer.m in Sources */,
 				3623A9021F00DCAA00D66D9E /* ZWSpinImageView.m in Sources */,
 				3623A8F01F00DCAA00D66D9E /* PLOpenGLSupport.m in Sources */,
-				3623A9281F00E0B900D66D9E /* ZWGetBundlePath.m in Sources */,
 				3623A8FB1F00DCAA00D66D9E /* PLTransitionFadeIn.m in Sources */,
 				3623A8F91F00DCAA00D66D9E /* PLTransition.m in Sources */,
 				3623A8E31F00DCA900D66D9E /* glues_quad.c in Sources */,
 				3623A8FC1F00DCAA00D66D9E /* PLTransitionFadeOut.m in Sources */,
 				3623A8F51F00DCAA00D66D9E /* PLSceneElement.m in Sources */,
-				3623A92B1F00E1C700D66D9E /* NSString+ZWStringDispose.m in Sources */,
 				3623A8F41F00DCAA00D66D9E /* PLScene.m in Sources */,
 				3623A8F11F00DCAA00D66D9E /* PLPanoramaBase.m in Sources */,
 				3623A8FF1F00DCAA00D66D9E /* PLView.m in Sources */,
@@ -789,6 +777,7 @@
 				3623A87A1F00DBB300D66D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
