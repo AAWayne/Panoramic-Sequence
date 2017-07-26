@@ -25,6 +25,39 @@
 
 #### [添加-fno-objc-arc示例]
 ![](./添加示例.png)
+
+#### 定位热点方法
+```
+本人愚昧，真心不知道别人的热点是怎么找出来的，所以在咨询过网友后，得知可以使用Windows下的Pano2VR软件进行热点定位
+可能图片的方向不同，我这里定位出来的热点应用热点要把x,y值交换。
+代码：
+    //Pano2VR 灯定位（-95.90, 36.84）
+    PLHotspot *hotspot = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:36.84 ath:95.90 width:0.05 height:0.05];
+    [panorama addHotspot:hotspot];
+
+    //Pano2VR 大门定位（-74.51, 2.33）
+    PLHotspot *hotspot2 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:2.33 ath:74.51 width:0.05 height:0.05];
+    [panorama addHotspot:hotspot2];
+
+    //Pano2VR 枕头定位（-126.77, -13.21）
+    PLHotspot *hotspot3 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:-13.21 ath:126.77 width:0.05 height:0.05];
+    [panorama addHotspot:hotspot3];
+    
+    //Pano2VR 窗帘定位（86.62, 17.55）
+    PLHotspot *hotspot4 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:17.55 ath:-86.62 width:0.05 height:0.05];
+    [panorama addHotspot:hotspot4];
+
+定位方式：将6方图（也可以是单张全景图）导入Pano2VR软件后，进行热点定位
+定位拿到平移与仰视的坐标，如：（-95, 36.84） ==> （36.84, 95.）
+在PanoramaGL 框架中应用时将xy坐标反置，并且x取反，如（x, y）==> (y, -x)
+热点定位效果如图所示：
+	
+```
+##### Pano2VR软件热点坐标：
+![](./Pano2VR软件热点定位.png)
+
+##### 框架内实际应用效果：
+![](./定位热点.png)
 	
 ##### [Demo具体应用展示 GitHub传送门](https://github.com/90candy/Panoramic-Sequence.git)
 
