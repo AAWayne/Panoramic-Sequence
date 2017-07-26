@@ -30,21 +30,21 @@
 ```
 本人愚昧，真心不知道别人的热点是怎么找出来的，所以在咨询过网友后，得知可以使用Windows下的Pano2VR软件进行热点定位
 可能图片的方向不同，我这里定位出来的热点应用热点要把x,y值交换。
-代码：
+代码如下：
     //Pano2VR 灯定位（-95.90, 36.84）
     PLHotspot *hotspot = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:36.84 ath:95.90 width:0.05 height:0.05];
     [panorama addHotspot:hotspot];
 
     //Pano2VR 大门定位（-74.51, 2.33）
-    PLHotspot *hotspot2 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:2.33 ath:74.51 width:0.05 height:0.05];
+    PLHotspot *hotspot2 = [PLHotspot hotspotWithId:2 texture:hotspotTexture atv:2.33 ath:74.51 width:0.05 height:0.05];
     [panorama addHotspot:hotspot2];
 
     //Pano2VR 枕头定位（-126.77, -13.21）
-    PLHotspot *hotspot3 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:-13.21 ath:126.77 width:0.05 height:0.05];
+    PLHotspot *hotspot3 = [PLHotspot hotspotWithId:3 texture:hotspotTexture atv:-13.21 ath:126.77 width:0.05 height:0.05];
     [panorama addHotspot:hotspot3];
     
     //Pano2VR 窗帘定位（86.62, 17.55）
-    PLHotspot *hotspot4 = [PLHotspot hotspotWithId:1 texture:hotspotTexture atv:17.55 ath:-86.62 width:0.05 height:0.05];
+    PLHotspot *hotspot4 = [PLHotspot hotspotWithId:4 texture:hotspotTexture atv:17.55 ath:-86.62 width:0.05 height:0.05];
     [panorama addHotspot:hotspot4];
 
 定位方式：将6方图（也可以是单张全景图）导入Pano2VR软件后，进行热点定位
